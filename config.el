@@ -41,10 +41,10 @@
 ;;      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 13))
 (setq doom-font (font-spec :family "TheSansMono" :size 14 :weight 'medium))
 (setq doom-unicode-font (font-spec :family "JuliaMono" :size 16 :weight 'medium))
-(when (display-graphic-p)
-(dolist (charset '(unicode))
-  (set-fontset-font (frame-parameter nil 'font)
-    charset (font-spec :family "JuliaMono" :size 16 :weight 'medium))))
+;; (when (display-graphic-p)
+;; (dolist (charset '(unicode))
+;;   (set-fontset-font (frame-parameter nil 'font)
+;;     charset (font-spec :family "JuliaMono" :size 16 :weight 'medium))))
 ;;
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
 ;; up, `M-x eval-region' to execute elisp code, and 'M-x doom/reload-font' to
